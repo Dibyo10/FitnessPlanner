@@ -24,10 +24,13 @@
     
     .navbar-nav {
       gap: 10px;
+      text-align: center;
     }
     
     .nav-link {
       padding: 0.5rem !important;
+      border-radius: 5px;
+      transition: background-color 0.3s ease-in-out;
     }
   }
 
@@ -36,12 +39,18 @@
       font-family: 'Arial', sans-serif;
       color: #fff;
       animation: backgroundSlide 10s infinite alternate;
+      background-size: 200% 100%;
+      background-position: 0% 50%;
+      
     }
 
     @keyframes backgroundSlide {
       0% {
         background-position: 0% 50%;
+
       }
+
+      
 
       100% {
         background-position: 100% 50%;
@@ -58,21 +67,26 @@
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
       backdrop-filter: blur(10px);
       transition: transform 0.3s;
+
     }
 
     .workout-section:hover {
       transform: scale(1.05);
+
     }
 
     h2 {
       color: white;
       font-weight: bold;
+      font-family: 'Lobster', cursive;
+
     }
 
     h4 {
       color: #fff;
       font-weight: bold;
       margin-bottom: 15px;
+
     }
 
     ul {
@@ -80,6 +94,7 @@
       padding: 0;
       list-style: none;
       color: #fff;
+
     }
 
     ul li {
@@ -87,6 +102,7 @@
       margin: 8px 0;
       padding: 10px;
       border-radius: 10px;
+
     }
   </style>
   <style>
@@ -96,11 +112,19 @@
       color: white;
       font-weight: bold;
       font-family: 'Lobster', cursive;
+
     }
 
     body {
       padding-top: 60px;
-      /* Reduced from 70px */
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+      animation: backgroundSlide 10s infinite alternate;
+      background-size: 200% 100%;
+      background-position: 0% 50%;
+
+
     }
 
     .navbar {
@@ -113,16 +137,23 @@
       width: 100%;
       z-index: 1000;
       padding: 0.5rem 1rem;
-      /* Reduced padding */
+      transition: background-color 0.3s ease-in-out;
+      
+
     }
 
     .navbar-brand {
       font-size: 1.1rem;
-      /* Smaller brand text */
+      font-weight: bold;
+      color: #fff;
+      transition: color 0.3s ease;
+
     }
 
     .navbar-nav {
       gap: 20px;
+      text-align: center;
+
     }
 
     .nav-link {
@@ -130,13 +161,22 @@
       font-weight: 500;
       transition: color 0.3s ease;
       padding: 0.5rem 0.75rem !important;
-      /* Reduced padding */
       font-size: 0.95rem;
-      /* Smaller link text */
+      border-radius: 5px;
+
+
+      
     }
 
     .nav-link:hover {
       color: #fff !important;
+    }
+    .nav-item:hover{
+      background: linear-gradient(135deg, #4a0b9b 0%, black 100%);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -160,7 +200,7 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Get New Plan!</a>
           </li>
-          <li>
+          <li class="nav-item">
              <a class="nav-link" href="https://youtube.com/playlist?list=PL5qo1Sl2GW3cMiepxpnY3vjo7MPM-ejBh&si=aB_t-jmfFcMYv-Qn">See Workout Playlist</a>
 
           </li>

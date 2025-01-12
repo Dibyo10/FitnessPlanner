@@ -11,6 +11,11 @@ body {
     height: 100vh;
     color: white;
     text-align: center;
+    font-size: 40px;
+    animation: backgroundSlide 10s infinite alternate;
+    background-size: 200% 100%;
+    background-position: 0% 50%;
+
 }
 
 .back-link {
@@ -24,14 +29,20 @@ body {
     padding: 10px 15px;
     border-radius: 5px;
     transition: background 0.3s ease-in-out;
+
 }
 
 .back-link:hover {
     background: rgba(0, 0, 0, 0.8);
+
 }
 
 .header {
     margin-bottom: 20px;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+
 }
 
 .container {
@@ -41,10 +52,12 @@ body {
     max-width: 600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
     transition: transform 0.3s ease-in-out;
+
 }
 
 .container:hover {
     transform: scale(1.05);
+
 }
 
 h1 {
@@ -52,16 +65,21 @@ h1 {
     font-size: 48px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out;
+
 }
 
 h1:hover {
     transform: scale(1.1);
+
 }
 
 p {
     margin-bottom: 15px;
     font-size: 18px;
     line-height: 1.6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+
 }
 
 .rounded-image {
@@ -70,4 +88,6 @@ p {
     border-radius: 50px 0 50px 0; 
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); 
+    transition: transform 0.3s ease-in-out;
+    
 }
